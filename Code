@@ -1,0 +1,13 @@
+python
+
+key = list(b_s.keys())
+value = list(b_s.values())
+
+import pandas as pd
+
+df = pd.DataFrame()
+df['keys'] = key
+df['values'] = value
+
+df.to_csv('/Users/brendafinlay/Documents/Cusack Lab/synsets_dataframe.csv', index=False)
+
